@@ -49,11 +49,11 @@ export default {
       const item = this.items[index];
       switch (item.id) {
         case "taptic":
-          mt.device.taptic(2).post(2);
+          mt.device.taptic(2).post();
           break;
         case "torch":
           mt.device
-            .torch(0.5)
+            .torch(item.level)
             .post()
             .then(value => {
               this.items[index].result = value;
