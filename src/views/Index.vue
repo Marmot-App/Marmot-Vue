@@ -10,7 +10,15 @@ import VueRouter from "vue-router";
 export default {
   data() {
     return {
-      items: ["device", "clipboard", "motion", "location", "qrcode"]
+      items: [
+        "device",
+        "system",
+        "clipboard",
+        "motion",
+        "location",
+        "qrcode",
+        "events"
+      ]
     };
   }
 };

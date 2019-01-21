@@ -6,6 +6,8 @@ import Clipboard from './views/Clipboard.vue';
 import Motion from './views/Motion.vue';
 import Location from './views/Location.vue';
 import QRCode from './views/QRCode.vue';
+import Events from './views/Events.vue';
+import System from './views/System.vue';
 
 Vue.use(Router);
 
@@ -17,6 +19,11 @@ export default new Router({
       path: '/',
       name: 'index',
       component: Index,
+    },
+    {
+      path: '/system',
+      name: 'system',
+      component: System,
     },
     {
       path: '/device',
@@ -34,6 +41,11 @@ export default new Router({
       component: Motion,
     },
     {
+      path: '/events',
+      name: 'events',
+      component: Events,
+    },
+    {
       path: '/location',
       name: 'location',
       component: Location,
@@ -45,3 +57,4 @@ export default new Router({
     },
   ],
 });
+

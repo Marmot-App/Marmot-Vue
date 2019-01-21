@@ -15,6 +15,14 @@
           </el-col>
         </el-row>
 
+        <el-slider
+          v-if="item.level != undefined"
+          v-model="item.level"
+          show-input
+          max="1"
+          step="0.1"
+        ></el-slider>
+
         <el-row>
           <el-col :span="24">
             <el-button class="btn" type="success" size="medium" v-on:click="runEvent(index)">点击运行</el-button>
